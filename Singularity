@@ -1,5 +1,5 @@
-BootStrap: shub
-From: nickjer/singularity-r
+BootStrap: localimage
+From: /home/akerley/singularity-r/singularity-r.simg
 
 %labels
   Maintainer Jeremy Nicklas
@@ -46,7 +46,7 @@ From: nickjer/singularity-r
   wget \
     --no-verbose \
     -O get-pip.py \
-    "https://bootstrap.pypa.io/get-pip.py"
+    "https://bootstrap.pypa.io/pip/3.5/get-pip.py"
   python3 get-pip.py
   rm -f get-pip.py
   pip3 install ldap3
